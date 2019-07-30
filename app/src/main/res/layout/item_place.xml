@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <data>
+        <variable
+            name="itemPlace"
+            type="com.astronout.viewmodelnetworking.viewmodels.ItemPlaceViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <!-- imageView item place -->
+        <ImageView
+            android:id="@+id/imageViewItemPlace"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:loadImage="@{itemPlace.image}"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/layoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/imageViewItemPlace"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp">
+
+            <!-- textView title item place -->
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@{itemPlace.title}"
+                tools:text="Place Name"/>
+
+            <!-- textView location item place -->
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="wrap_content"
+                android:text="@{itemPlace.location}"
+                android:layout_height="wrap_content"
+                tools:text="Place Location"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>
