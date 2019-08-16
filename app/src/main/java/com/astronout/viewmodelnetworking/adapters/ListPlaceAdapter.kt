@@ -27,9 +27,9 @@ class ListPlaceAdapter(val context: Context): RecyclerView.Adapter<ListPlaceAdap
     override fun onBindViewHolder(holder: ItemPlaceViewHolder, position: Int) {
         holder.bindData(listPlace[holder.adapterPosition])
 
-        holder.itemView.setOnClickListener{
-            Toast.makeText(context, listPlace[position].name, Toast.LENGTH_SHORT).show()
-        }
+//        holder.itemView.setOnClickListener{
+//            Toast.makeText(context, listPlace[position].name, Toast.LENGTH_SHORT).show()
+//        }
     }
 
     fun setData(list: MutableList<ListPlaceResponseModel.ListPlaceModel>){
