@@ -1,4 +1,5 @@
 # MVVM-Networking
+<a href="https://travis-ci.org/ariastro/MVVM-Networking"><img src="https://travis-ci.org/ariastro/MVVM-Networking.svg?branch=master"></a>
 
 Show the list of Tourism Place in Malang and Batu using API from <a href="https://info-madiun.firebaseapp.com/Sample.json">here.<a> With MVVM pattern, retrofit and Gide library
 
